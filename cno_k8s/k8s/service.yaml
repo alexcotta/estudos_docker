@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cno-etl-service
+spec:
+  selector:
+    app: cno-etl
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
